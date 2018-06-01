@@ -1,3 +1,6 @@
+.slick-active {
+  outline: none; }
+
 html {
   font-size: 14px; }
 
@@ -7,8 +10,25 @@ body {
   font-family: 'Roboto', sans-serif;
   padding-top: 40px; }
 
+h2 {
+  font-size: 24px; }
+
 a {
   color: #009adf; }
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  background-color: #009adf;
+  color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700; }
+  .btn-primary {
+    border-bottom: 5px solid #0077ac; }
+    .btn-primary:hover {
+      background-color: #00a1e9; }
 
 .top-nav {
   background-color: #fff;
@@ -79,3 +99,20 @@ a {
       .left-sidebar_object-description h3 {
         text-transform: uppercase;
         font-weight: 400; }
+
+.content {
+  margin-top: 40px; }
+  .content h2 {
+    font-size: 24px; }
+
+.directions {
+  margin-top: 80px; }
+  .directions-block {
+    background-color: #fff;
+    height: 220px;
+    text-align: center;
+    padding: 10px;
+    background-position: bottom center;
+    background-repeat: no-repeat; }
+    .directions-block h3 {
+      color: #009adf; }

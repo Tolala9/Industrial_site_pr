@@ -14,6 +14,10 @@
 		<!-- Google Fonts Roboto -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 
+		<!-- Slick slider -->
+		<link rel="stylesheet"  href="slick/slick-theme.css">
+		<link rel="stylesheet"  href="slick/slick.css">
+
 		<!-- Custom styles for this template -->
 		<link href="css/main.css" rel="stylesheet">
 	</head>
@@ -81,7 +85,37 @@
 					<!-- /.left-sidebar -->
 				</div>
 				<!-- /.col-md-4 -->
-				<div class="col-md-8"></div>
+				<div class="col-md-8">
+					<div class="content">
+						<h2>ІндастріалБуд</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur accusamus nisi libero, voluptas id totam, laborum alias cumque soluta dolor quam ipsam. Exercitationem repellendus, deserunt illo provident assumenda adipisci eius aperiam autem aspernatur veniam esse, sit quisquam doloremque commodi voluptatum maxime consequatur dolorem placeat accusantium voluptatem fuga voluptas mollitia nihil?</p>
+						<p>Tempora, nulla placeat minus molestias. Ratione totam quaerat minus ullam. Iusto odio distinctio dignissimos earum hic tenetur sed nostrum cupiditate, molestias magni veniam eos dicta maiores blanditiis perspiciatis, nemo ipsa ut sapiente ipsum sunt quod! Laudantium minus aperiam recusandae, nulla distinctio officiis iure! Porro iure dignissimos, possimus nostrum.</p>
+						<p>Cumque laudantium beatae eius aspernatur, pariatur maiores id quae quis dicta ducimus numquam nostrum nulla aliquam veritatis tempora accusantium harum adipisci eum, aut dolor eveniet optio, ipsam cum fugit. Odit aliquid nulla eveniet fuga voluptas, quod, eius iure aperiam itaque iste natus nihil vero ratione provident accusantium sint, esse. Ut, eos a?</p>
+						<a href="#" class="btn btn-primary">Дізнатись більше про компанію</a>
+					</div>
+					<!-- /.content -->
+					<div class="directions">
+						<h2>Напрями діяльності</h2>
+						<div class="direction-blocks">
+							<div class="directions-block" style="background-image: url(img/1.jpg);">
+								<h3>Девелоперські проекти</h3>
+							</div>
+							<div class="directions-block" style="background-image: url(img/2.jpg);">
+								<h3>Продаж нерухомості</h3>
+							</div>
+							<div class="directions-block" style="background-image: url(img/3.jpg);">
+								<h3>Будівництво</h3>
+							</div>
+							<div class="directions-block" style="background-image: url(img/4.jpg);">
+								<h3>Інвестиційні програми</h3>
+							</div>
+							<div class="directions-block" style="background-image: url(img/5.jpg);">
+								<h3>Фінансові інструменти</h3>
+							</div>
+						</div>
+						<!-- /.direction-blocks -->
+				</div>
+				</div>
 				<!-- /.col-md-8 -->
 			</div>
 			<!-- /.row -->
@@ -95,6 +129,14 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" </script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 		
-	
+		<script src="slick/slick.js"></script>
+		<script>
+			$('.direction-blocks').slick({
+				arrows: false,
+				dots: true,
+				slidesToShow: 4,
+				slidesToScroll: 1
+			});
+		</script>
 	</body>
 </html>
