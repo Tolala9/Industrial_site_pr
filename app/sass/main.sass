@@ -5,6 +5,7 @@ html
 	font-size: 14px
 
 body
+	margin: 0
 	background-color: $body-bg
 	color: $dark
 	font-family: 'Roboto', sans-serif
@@ -106,6 +107,62 @@ a
 			color: $active-color
 			
 			
+.footer
+	margin-top: 60px
+	background-color: $dark
+	color: $footer-text
+	padding: 59px 0
+	&-policy-link
+		font-size: 12px
+	a
+		color: $footer-text
+		text-decoration: none
+		&:hover
+			color: $white
+	small
+		display: block
+		margin-top: 56px
+		line-height: 16px
+		font-size: 10px
+		max-width: 80%
+	ul
+		list-style: none
+		padding: 0
+		li
+			line-height: 32px		
+
+	&-contacts
+		text-align: right
+		&_phone
+			font-weight: 400
+			font-size: 20px
+			color: $active-color
+
+	&-social-links
+		@extend .footer-contacts
+		li
+			display: inline-block
+			margin-left: 10px
+			a
+				display: inline-block
+				width: 35px
+				height: 35px
+				background-color: rgba($white, 0.1)
+				text-align: center
+				border-radius: 50%
+				transition: all 0.2s
+				&:hover
+					background-color: rgba($white, 0.2)
+				i
+					font-size: 18px
+					line-height: 35px
+					color: $white
+			
+
+
+		
+		
+
 
 
 
