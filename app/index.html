@@ -30,13 +30,16 @@
 	<div class="container">
 		<div class="top-nav">
 			<div class="row justify-content-between align-items-center">
-				<div class="col-md-auto">
+				<div class="col-md-auto col-sm-3">
 					<div class="logo">
 						<img src="img/logo.png" alt="Logo">
 					</div>
 				</div>
 				<!-- /.col-md -->
-				<div class="col-md-auto">
+				<div class="col-md-auto col-sm-9">
+					<button class="top-nav_btn">
+						<i class="fas fa-bars"></i>
+					</button>
 					<ul class="top-nav_menu">
 						<li><a href="#">Головна</a></li>
 						<li><a href="#">Про компанію</a></li>
@@ -46,13 +49,16 @@
 						<li><a href="#">Контакти</a></li>
 					</ul>
 				</div>
-				<!-- /.col-md -->
+				<!-- /.col-sm -->
 			</div>
 			<!-- /.row -->
 		</div>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="left-sidebar">
+					<div class="left-sidebar_btn">
+						Категорії
+					</div>
 					<ul class="left-sidebar_menu">
 						<li><a href="#">Земля</a></li>
 						<li><a href="#">Житлова нерухомість</a></li>
@@ -88,8 +94,8 @@
 				</div>
 				<!-- /.left-sidebar -->
 			</div>
-			<!-- /.col-md-4 -->
-			<div class="col-md-8">
+			<!-- /.col-sm-4 -->
+			<div class="col-sm-8">
 				<div class="content">
 					<h2>ІндастріалБуд</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur accusamus nisi libero, voluptas id totam, laborum alias cumque soluta dolor quam ipsam. Exercitationem repellendus, deserunt illo provident assumenda adipisci eius aperiam autem aspernatur veniam esse, sit quisquam doloremque commodi voluptatum maxime consequatur dolorem placeat accusantium voluptatem fuga voluptas mollitia nihil?</p>
@@ -120,7 +126,7 @@
 					<!-- /.direction-blocks -->
 				</div>
 			</div>
-			<!-- /.col-md-8 -->
+			<!-- /.col-sm-8 -->
 		</div>
 		<!-- /.row -->
 	</div>
@@ -128,15 +134,15 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md">
+				<div class="col-sm">
 					<div class="copy">
 						<p class="footer-policy-link">Copyright Ⓒ 2014-2017</p>
 						<a href="#">Політика Конфіденційності</a>
 						<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore magnam amet, repudiandae, a autem eligendi quas porro quibusdam. Autem molestiae ab, vitae minima perspiciatis magnam esse illo vel quam eveniet modi quidem aut repudiandae rem totam voluptatem. Amet, libero.</small>
 					</div>
 				</div>
-				<!-- /.col-md -->
-				<div class="col-md-3">
+				<!-- /.col-sm -->
+				<div class="col-sm-3 col-6">
 					<ul class="footer_menu">
 						<li><a href="#">Головна</a></li>
 						<li><a href="#">Про компанію</a></li>
@@ -146,8 +152,8 @@
 						<li><a href="#">Контакти</a></li>
 					</ul>
 				</div>
-				<!-- /.col-md -->
-				<div class="col-md-3">
+				<!-- /.col-sm -->
+				<div class="col-sm-3 col-6">
 					<ul class="footer_menu">
 						<li><a href="#">Земля</a></li>
 						<li><a href="#">Житлова нерухомість</a></li>
@@ -158,8 +164,8 @@
 						<li><a href="#">Оренда</a></li>
 					</ul>
 				</div>
-				<!-- /.col-md -->
-				<div class="col-md">
+				<!-- /.col-sm -->
+				<div class="col-sm">
 					<div class="footer-contacts">
 						<p class="footer-contacts_phone">8 (800) 850-50-50</p>
 						<p class="footer-contacts_address">м. Львів, вул. Городоцька, буд. 12</p>
@@ -174,7 +180,7 @@
 						</ul>
 					</div>
 				</div>
-				<!-- /.col-md -->
+				<!-- /.col-sm -->
 			</div>
 			<!-- /.row -->
 		</div>
@@ -194,6 +200,33 @@
 				dots: true,
 				slidesToShow: 4,
 				slidesToScroll: 1
+				responsive: [
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				}
+				]
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				var menuBtn = $('.top-nav_btn');
+				var menu = $('.top-nav_menu');
+				var sidebarBtn = $('.left-sidebar_btn');
+				var sidebarMenu = $('.left-sidebar_menu');
+
+				menuBtn.click(function(event) {
+					event.preventDefault();
+					menu.toggleClass('top-nav_menu__active');
+				});
+				sidebarBtn.click(function(event) {
+					event.preventDefault();
+					sidebarMenu.toggleClass('left-sidebar_menu__active');
+				});
+
 			});
 		</script>
 	</body>
