@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .slick-active {
   outline: none; }
 
@@ -176,3 +177,63 @@ a {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px; }
+
+/* Contacts */
+.contacts {
+  font-size: 16px; }
+  .contacts p i {
+    margin-right: 12px;
+    color: #009adf; }
+  .contacts-address {
+    margin-bottom: 20px; }
+  .contacts-btn {
+    margin-top: 20px; }
+  .contacts-social-links {
+    margin-top: 30px; }
+    .contacts-social-links ul {
+      padding: 0; }
+      .contacts-social-links ul li {
+        display: inline-block;
+        margin-left: 19px; }
+        .contacts-social-links ul li a {
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          background-color: rgba(0, 154, 223, 0.9);
+          text-align: center;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          -webkit-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s; }
+          .contacts-social-links ul li a:hover {
+            background-color: rgba(0, 154, 223, 0.5); }
+          .contacts-social-links ul li a i {
+            font-size: 18px;
+            line-height: 32px;
+            color: #fff; }
+
+/* Organization */
+.organization-card {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  min-height: 30rem;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
+  .organization-card:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+            box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1); }
+  .organization-card a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #009adf; }
+  .organization-card small {
+    display: block;
+    сolor: #757575FF;
+    font-size: 12px;
+    line-height: 1.5; }
+  .organization-card p {
+    line-height: 22px; }
